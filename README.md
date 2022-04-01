@@ -19,34 +19,57 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:
-### Register Number: 
+### Developed By: K.BALAJI
+### Register Number: 212221230011
 i) #To Read,display the image
 ```
   import cv2
-
+  s=cv2.imread('r.jpg',1)
+  cv2.imshow('Tony',s)
+  cv2.waitKey(0)
 ```
 ii) #To write the image
 ```
-
+import cv2
+a=cv2.imread('r.jpg',1)
+cv2.imwrite('rj.jpg',a)
+cv2.imshow('man',a)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 ```
 iii) #Find the shape of the Image
-``python3
-
+```
+import cv2
+a=cv2.imread('r.jpg',1)
+print(a.shape)
 
 
 ```
 iv) #To access rows and columns
-```python3
-
+```
+import cv2
+a=cv2.imread('r.jpg',1)
+import random
+for i in range (100):
+    for j in range(a.shape[1]):
+        a[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow('Iron man',a)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 ```
 v) #To cut and paste portion of image
-```python3
-
+```
+import cv2
+a=cv2.imread('r.jpg',1)
+tag = a[100:200,100:200]
+a[50:150,50:150] = tag
+cv2.imshow('Image',a)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 ```
@@ -54,25 +77,27 @@ v) #To cut and paste portion of image
 ## Output:
 
 ### i) Read and display the image
-
+![output1](./read.png)
 <br>
 <br>
 
 ### ii)Write the image
-
+![output](write.png)
 <br>
 <br>
 
 ### iii)Shape of the Image
-
+![output](shape.png)
 <br>
 <br>
 
 ### iv)Access rows and columns
+![ouput](rows%20.png)
 <br>
 <br>
 
 ### v)Cut and paste portion of image
+![output](cut.png)
 <br>
 <br>
 
