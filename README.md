@@ -18,6 +18,12 @@ Use imshow(window_name, image) to display the image.
 Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 ## Program:
 ### Developed By: K.BALAJI
 ### Register Number: 212221230011
@@ -80,7 +86,8 @@ cv2.destroyAllWindows()
 ![output1](./read.png)
 <br>
 <br>
-
+<br></br>
+<br></br>
 ### ii)Write the image
 ![output](write.png)
 <br>
@@ -88,13 +95,10 @@ cv2.destroyAllWindows()
 
 ### iii)Shape of the Image
 ![output](shape.png)
-<br>
-<br>
 
 ### iv)Access rows and columns
 ![ouput](rows%20.png)
-<br>
-<br>
+
 
 ### v)Cut and paste portion of image
 ![output](cut.png)
